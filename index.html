@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tiny House 🏡</title>
+		<style>
+			body {
+				background: #5dacbd;
+				font-family: "IBM Plex Serif", serif;
+			}
+			img {
+				width: 100%;
+				border-radius: 5px;
+				transition: all 150ms ease-in-out;
+			}
+
+			img:hover {
+				transform: scale(1.05);
+			}
+
+			img .grid {
+				margin: 5px auto;
+			}
+			button {
+				background: #24527a;
+				color: #e0ebeb;
+				font-size: 15px;
+				margin-top: 5px;
+				border-radius: 5px;
+				box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+				padding: 10px 15px;
+				margin-bottom: 10px;
+				transition: all 150ms ease-in-out;
+			}
+			button:hover {
+				cursor: pointer;
+				color: #24527a;
+				background: #e0ebeb;
+			}
+
+			footer {
+				text-align: center;
+			}
+			p {
+				margin: 15px;
+			}
+			.heading {
+				background: #e0ebeb;
+				border-radius: 5px;
+				padding: 10px;
+				margin: 5px 70px;
+			}
+			.container {
+				width: 70%;
+				text-align: center;
+				border: solid 1px #24527a;
+				border-radius: 10px;
+				background: #a7bcb9;
+				margin: 0 auto;
+			}
+			.tiny-house-pano {
+				transition: all 200ms ease-in-out;
+				width: 95%;
+				margin-bottom: 15px;
+			}
+			.tiny-house-pano:hover {
+				transform: scale(1.05);
+				filter: drop-shadow(0 0 3px #24527a) opacity(0.8);
+			}
+
+			.grid {
+				width: 95%;
+				margin: 0 auto;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 25px;
+				border-top: 1px solid #24527a;
+				padding-top: 10px;
+			}
+			.rounded-tiny-house {
+				grid-column: 1 / 2;
+				grid-row: 1 / 2;
+			}
+			.tiny-house-interior {
+				grid-column: 2 / 3;
+				grid-row: 1 / 3;
+			}
+			.tiny-house-stairs {
+				grid-column: 1 /2;
+				grid-row: 2/4;
+			}
+			.green-cabin-house {
+				grid-column: 2/3;
+				grid-row-end: 3 /4;
+			}
+			.size-details {
+				font-weight: 300;
+			}
+
+			.dark {
+				background: black;
+				color: #e0ebeb;
+			}
+			.dark .container {
+				background: darkgray;
+			}
+			.dark .heading {
+				background: rgba(0, 0, 0, 0.5);
+			}
+
+			.dark button {
+				background: black;
+			}
+		</style>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<button class="theme-btn">Change theme</button>
+			<div class="heading">
+				<h1>Tiny House Living</h1>
+				<h2>A cultural and architectural movement</h2>
+			</div>
+			<a
+				href="https://tinyhousehub.co.nz/"
+				target="_blank"
+			>
+				<img
+					src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/130/original/jed-owen-ZdEQ_JKizsU-unsplash.jpg?1666060137"
+					alt="Tiny house pano"
+					class="tiny-house-pano"
+				/>
+			</a>
+
+			<div class="grid">
+				<img
+					src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/969/original/arwin-basdew-4S6FmLPEP6A-unsplash.jpg?1665971567"
+					alt="Cabin Tiny House"
+					class="green-cabin-house"
+				/>
+				<img
+					src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/972/original/nachelle-nocom-51adhgg5KkE-unsplash.jpg?1665971599"
+					alt="Tiny House Interior"
+					class="tiny-house-interior"
+				/>
+				<img
+					src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/970/original/clay-banks-U74CPDcq5OY-unsplash.jpg?1665971581"
+					alt="Tiny House Stairs"
+					class="tiny-house-stairs"
+				/>
+				<img
+					src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/971/original/harry-pepelnar-w0xLgCWPsQA-unsplash.jpg?1665971591"
+					alt="Rounded tiny-house"
+					class="rounded-tiny-house"
+				/>
+			</div>
+			<p>
+				The tiny-house movement (also known as the small house movement) is an
+				architectural and social movement that advocates for downsizing living
+				spaces, simplifying, and essentially living with less.
+			</p>
+			<p class="size-details">
+				The small house movement is a return to houses of less than 1,000 square
+				feet (93 m2). Frequently, the distinction is made between small (between
+				400 and 1,000 sq ft or 37 and 93 m2), and tiny houses (less than 400 sq
+				ft or 37 m2), with some as small as 80 square feet (7.4 m2).
+			</p>
+			<button class="transform-button">Transform to Tiny</button>
+		</div>
+		<footer>
+			Coded by
+			<a
+				href="https://github.com/katiecsomers"
+				target="_blank"
+				>Katie C Somers
+			</a>
+		</footer>
+		<script>
+			function changeTheme() {
+				let body = document.querySelector("body");
+				if (body.classList.contains("dark")) {
+					body.classList.remove("dark");
+				} else {
+					body.classList.add("dark");
+				}
+			}
+
+			function getDetails() {
+				let name = prompt(
+					"Thanks for your interest in the tiny house movement! What's your name?"
+				);
+				let email = prompt("And what is your email?");
+
+				alert(
+					`Thanks ${name}! We'll be in touch soon to get you on your tiny journey.`
+				);
+			}
+
+			let themeButton = document.querySelector(".theme-btn");
+			themeButton.addEventListener("click", changeTheme);
+
+			let transformButton = document.querySelector(".transform-button");
+			transformButton.addEventListener("click", getDetails);
+		</script>
+	</body>
+</html>
